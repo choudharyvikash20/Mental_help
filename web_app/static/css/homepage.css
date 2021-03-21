@@ -1,4 +1,3 @@
-
 .navbar-light{
   background-color:white ;
   color: white ;
@@ -158,7 +157,75 @@ font-size: 0.3em ;
 box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-body{
+@media screen and ( max-width:400px){
+.intro{
+    background-color: #f7dbcd;
+    min-heigh:600px;
+    width:100%;
+    margin-top: 3% ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.IntroPic{
+    margin-right: 1% ;
+    margin-top: 3% ;
+    align-self: flex-end;
+    max-width:50%;
+    height:auto;
+}
+.introText{
+  font-size: 4em ;
+  padding-left: 5% ;
+  padding-top: 7% ;
+ /* min-width:850px;*/
+  height:auto;
+  width:100%;
+  align-self: flex-start;
+}
 
+
+.introMainTitle{
+text-align: left;
+font-size: 4vw;
+
+}
+
+.introSubTitle{
+font-size: 5vw ;
+
+}
+
+.tagLine{
+margin-top: 5%;
+font-size:2vw;
+}
+
+
+
+
+.introLoginButton{
+  margin-top: 10% ;
+  padding-left: 10% ;
+  padding-top: 0.5%;
+  padding-bottom: 0.5% ;
+  padding-right: 7% ;
+
+font-size: 0.3em ;
+}
+
+.introSignUpButton{
+    margin-top: 10% ;
+  padding-left: 7% ;
+  padding-top: 0.5%;
+  padding-bottom: 0.5% ;
+  padding-right: 10% ;
+
+font-size: 0.3em ;
+}
 
 }
