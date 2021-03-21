@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/css">
+  <script src="{% static 'js/home.js'%}"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky">
+
+    <a class="navbar-brand" href="#">MentalHelp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" aria-current="page" href="#">LogIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SignUp</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" aria-current="page" href="#">Test</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <section class="intro">
+
+    <div class="introText">
+      <h1 class="introMainTitle">Feeling not happy</h1>
+      <h2 class="introSubTitle">You know where to come</h2>
+      <h2 class="tagLine">Your companion, guide, and <strong>Friend </strong>in the journey of life</h2>
+      <button type="button" class="btn btn-lg btn-primary introLoginButton">LogIn</button>
+      <button type="button" class="btn btn-lg btn-outline-primary introSignUpButton">SignUp</button>
+    </div>
+    <div class="IntroPic">
+      <img src="{% static 'img/homeTitilePic.jpg' %}" alt=""  >
+    </div>
+
+
+  </section>
+
+  <section class="description">
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/privacy.jpg' %}" alt="Privacy Matters" id="privacyImage">
+        <h3 class="feature-box-heading">
+          <b>Private and Confidential</b>
+        </h3 >
+
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/privacy.jpg' %}" alt="Privacy Matters" id="privacyImage" >
+        <h3 class="feature-box-heading">
+          <b>Community Support</b>
+        </h3>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/privacy.jpg' %}" alt="Privacy Matters" id="privacyImage">
+        <h3 class="feature-box-heading">
+          <b>Anonymous Discussions</b>
+        </h3>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="service">
+
+    <h2 id="serviceHeading">Overcome your problems</h2>
+
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/depression2.png' %}" alt="Depression" id="depressionImage" class="serviceImage">
+        <h3 class="service-heading">
+          <b>Depression</b>
+        </h3>
+
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/depression2.png' %}" alt="Anxiety" id="anxietyImage" class="serviceImage">
+        <h3 class="service-heading">
+          <b>Anxiety</b>
+        </h3>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img src="{% static 'img/depression2.png' %}" alt="Stress" id="stressImage" class="serviceImage">
+        <h3 class="service-heading">
+          <b>Stress</b>
+        </h3>
+
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section >
+
+
+
+  </section>
+
+
+</body>
+
+</html>
