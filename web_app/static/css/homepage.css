@@ -157,52 +157,46 @@ font-size: 0.3em ;
 box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-@media screen and ( max-width:400px){
+@media screen and ( max-device-width:500px/*500*/){
 .intro{
     background-color: #f7dbcd;
-    min-heigh:600px;
-    width:100%;
+    height:auto;
+    width: 100%;
     margin-top: 3% ;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     display: block;
-}
-img {
-    max-width: 100%;
-    height: auto;
 }
 .IntroPic{
     margin-right: 1% ;
     margin-top: 3% ;
-    align-self: flex-end;
-    max-width:50%;
+    padding: 50px;
+    max-width:100%;
     height:auto;
 }
 .introText{
-  font-size: 4em ;
   padding-left: 5% ;
   padding-top: 7% ;
- /* min-width:850px;*/
   height:auto;
   width:100%;
-  align-self: flex-start;
 }
 
 
 .introMainTitle{
 text-align: left;
-font-size: 4vw;
+padding-top:50px;
+font-size: 6vw;
 
 }
 
 .introSubTitle{
-font-size: 5vw ;
+font-size: 7vw ;
 
 }
 
 .tagLine{
 margin-top: 5%;
-font-size:2vw;
+font-size:3vw;
 }
 
 
@@ -214,8 +208,7 @@ font-size:2vw;
   padding-top: 0.5%;
   padding-bottom: 0.5% ;
   padding-right: 7% ;
-
-font-size: 0.3em ;
+  font-size: 0.3em ;
 }
 
 .introSignUpButton{
