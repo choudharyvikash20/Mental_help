@@ -1,0 +1,1 @@
+web: gunicorn Mental_help.wsgi --log-file -
