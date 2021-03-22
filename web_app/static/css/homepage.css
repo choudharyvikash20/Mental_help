@@ -46,7 +46,7 @@
     padding-bottom: 5px;
     display: flex;
 }
-img {
+.main {
     max-width: 100%;
     height: auto;
 }
@@ -112,7 +112,9 @@ font-size: 0.3em ;
   background-color: #b8b5ff;
 
 }
-
+img {
+  max-width:100%;
+}
 .feature-box{
   display: flex;
   text-align: center;
@@ -158,7 +160,7 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 @media screen and ( max-device-width:500px),
-       screen and (max-width:500px){
+       screen and (max-width:700px){
 .intro{
     background-color: #f7dbcd;
     height:auto;
@@ -166,14 +168,13 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 3% ;
     padding-top: 10px;
     padding-bottom: 5px;
-    display: block;
+    display: table;
 }
 .IntroPic{
-    margin-right: 1% ;
-    margin-top: 3% ;
-    padding: 50px;
-    max-width:100%;
-    height:auto;
+  margin-right: 1% ;
+  margin-top: 3% ;
+  max-width:100%;
+  height:auto;
 }
 .introText{
   padding-left: 5% ;
@@ -181,10 +182,12 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height:auto;
   width:100%;
 }
-
+.main {
+  max-width: 100%;
+  height: auto;
+}
 
 .introMainTitle{
-text-align: left;
 padding-top:50px;
 font-size: 6vw;
 
