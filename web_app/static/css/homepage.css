@@ -1,237 +1,134 @@
-.navbar-light{
-  background-color:white ;
-  color: white ;
-
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-.navbar-brand{
-
-  padding-left: 10% ;
-  font-size: 1.5em ;
-  font-weight: bold;
-
-}
-
-.navbar-text{
-  color: white;
-}
-
-.navbar-nav{
-  padding-right: 20% ;
-  font-size: 1.25em ;
-}
-
-.nav-item{
-  padding-right: 10% ;
-  color: white ;
-
-}
-
-.nav-link{
-  color : white ;
-}
 
 .intro{
-    background-color: #f7dbcd;
-    min-height:600px;
-    width:100%;
-    margin-top: 3% ;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
+    background-color: #f7dbcd;min-height:600px;width:100%;margin-top: 3% ;padding-top: 5px;padding-bottom: 5px;display: flex;
 }
 .main {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;height: auto;
 }
 .IntroPic{
-    margin-right: 1% ;
-    margin-top: 3% ;
-    align-self: flex-end;
-    max-width:50%;
-    height:auto;
+    margin-right: 1% ;margin-top: 3% ;align-self: flex-end;max-width:50%;height:auto;
 }
 .introText{
-  font-size: 4em ;
-  padding-left: 5% ;
-  padding-top: 7% ;
- /* min-width:850px;*/
-  height:auto;
-  width:100%;
-  align-self: flex-start;
+  font-size: 4em ;padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;align-self: flex-start;
 }
-
-
 .introMainTitle{
-text-align: left;
-font-size: 4vw;
-
+  text-align: left;font-size: 4vw;
 }
-
 .introSubTitle{
-font-size: 5vw ;
-
+  font-size: 5vw ;
 }
-
 .tagLine{
-margin-top: 5%;
-font-size:2vw;
+  margin-top: 5%;font-size:2vw;
 }
-
-
-
-
 .introLoginButton{
-  margin-top: 10% ;
-  padding-left: 10% ;
-  padding-top: 0.5%;
-  padding-bottom: 0.5% ;
-  padding-right: 7% ;
-
-font-size: 0.3em ;
+  margin-top: 10% ;padding-left: 10% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 7% ;font-size: 0.3em ;
 }
-
 .introSignUpButton{
-    margin-top: 10% ;
-  padding-left: 7% ;
-  padding-top: 0.5%;
-  padding-bottom: 0.5% ;
-  padding-right: 10% ;
-
-font-size: 0.3em ;
+  margin-top: 10% ;padding-left: 7% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 10% ;font-size: 0.3em ;
 }
-
 .description{
-  padding: 7% 15% ;
-  background-color: #b8b5ff;
-
+  padding: 7% 15% ;background-color: #b8b5ff;
 }
 img {
   max-width:100%;
 }
 .feature-box{
-  display: flex;
-  text-align: center;
-  font-size: 0.75em;
-  display: block;
-
+  display: flex;text-align: center;font-size: 0.75em;display: block;
 }
 .feature-box-heading{
   font-size: 20px;
 }
-
 #privacyImage{
-  border-radius: 5% ;
-  margin-bottom: 5% ;
+  border-radius: 5% ;margin-bottom: 5% ;
 }
-
 #service{
-  background-color: white ;
-  padding: 2% 12% ;
-  margin-bottom:10% ;
-  width:100%;
+  background-color: white ;padding: 2% 12% ;margin-bottom:10% ;width:100%;
 }
-
 #serviceHeading{
-  text-align: center;
-  font-size: 3.25em ;
-  font-weight: bold;
-  padding-top: 4%;
-  margin-bottom: 7%;
+  text-align: center;font-size: 3.25em ;font-weight: bold;padding-top: 4%;margin-bottom: 7%;
 }
-
 .service-heading{
-  padding-top: 4% ;
-  padding-bottom: 20% ;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
+  padding-top: 4% ;padding-bottom: 20% ;text-align: center;font-size: 25px;font-weight: bold;
 }
-
 .serviceImage{
-
 box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-@media screen and ( max-device-width:500px),
-       screen and (max-width:700px){
-
-.navbar-brand{
-
-  padding-left: 10% ;
-  font-size: 3em ;
-  font-weight: bold;
-
 }
 
+/* mobile CSS */
+
+
+
+
+@media screen and ( max-device-width:500px)
+{
 .intro{
-    background-color: #f7dbcd;
-    height:auto;
-    width: 100%;
-    margin-top: 3% ;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    display: table;
+    background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
 }
 .IntroPic{
-  margin-right: 1% ;
-  margin-top: 3% ;
-  max-width:100%;
-  height:auto;
+  margin-right: 1% ;margin-top: 1% ;min-width:100%;height:auto;padding-left: 37%;
 }
 .introText{
-  padding-left: 5% ;
-  padding-top: 7% ;
-  height:auto;
-  width:100%;
+  padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;
 }
 .main {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%;height: auto;
 }
 
 .introMainTitle{
-padding-top:50px;
-font-size: 6vw;
-
+  padding-top:50px;font-size: 6vw;
 }
 
 .introSubTitle{
-font-size: 7vw ;
-
+  font-size: 7vw ;
 }
 
 .tagLine{
-margin-top: 5%;
-font-size:3vw;
+  margin-top: 5%;font-size:3vw;
+}
+.introLoginButton{
+  font-size: 0.7em ;
+}
+.introSignUpButton{
+  font-size: 0.7em ;
+}
+
 }
 
 
 
+/* width size less than 650px */
+@media only screen and (max-width:700px)
+{
+.intro{
+    background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
+}
+.IntroPic{
+  margin-right: 1% ;margin-top: 1% ;max-width:100%;height:auto;padding-left: 28%;
+}
+.introText{
+  padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;
+}
+.main {
+  max-width: 100%;height: auto;
+}
+
+.introMainTitle{
+  padding-top:50px;font-size: 6vw;
+}
+
+.introSubTitle{
+  font-size: 7vw ;
+}
+
+.tagLine{
+  margin-top: 5%;font-size:3vw;
+}
 
 .introLoginButton{
-  margin-top: 10% ;
-  padding-left: 10% ;
-  padding-top: 0.5%;
-  padding-bottom: 0.5% ;
-  padding-right: 7% ;
-  font-size: 0.3em ;
+  margin-top: 10% ;padding-left: 10% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 7% ;font-size: 0.3em ;
 }
 
 .introSignUpButton{
-    margin-top: 10% ;
-  padding-left: 7% ;
-  padding-top: 0.5%;
-  padding-bottom: 0.5% ;
-  padding-right: 10% ;
-
-font-size: 0.3em ;
+  margin-top: 10% ;padding-left: 7% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 10% ;font-size: 0.3em ;
 }
-
 }
