@@ -1,72 +1,200 @@
+/* //////////////                                                  Intro section                          */
 .intro{
-  background-color: #f7dbcd;min-height:40vh;width:100%;margin-top: 3% ;padding-top: 5px;padding-bottom: 5px;display: flex;
+  background-color: #f7dbcd; min-height:40vh;
+  width:100%;margin-top: 3% ;padding-top: 5px;
+  padding-bottom: 5px;display: flex;
 }
 .main {
-  max-width: 100%;height: auto; @include img-fluid;
+  max-width: 100%;height: auto;
 }
 .IntroPic{
-  margin-right: 1% ;margin-top: 3% ;align-self: flex-end;max-width:100%;height:auto;padding-top: 25vh;
+  margin-right: 1% ;margin-top: 3% ;
+  align-self: flex-end;max-width:100%;
+  height:auto;padding-top: 25vh;
 }
 .introText{
-font-size: 4em ;padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;align-self: flex-start;
+  font-size: 4em ;padding-left: 5% ;
+  padding-top: 7% ;height:auto;width:100%;
+  align-self: flex-start;
 }
 .introMainTitle{
-text-align: left;font-size: 4vw;
+  text-align: left;font-size: 4vw;
 }
 .introSubTitle{
-font-size: 5vw ;
+  font-size: 5vw ;
 }
 .tagLine{
-margin-top: 5%;font-size:2vw;
+  margin-top: 5%;font-size:2vw;
 }
 .introLoginButton{
-margin-top: 10% ;padding-left: 10% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 7% ;font-size: 0.3em ;
+  margin-top: 10% ;padding: 0.5% 7% 0.5% 10%;
+  font-size: 0.3em ;
 }
 .introSignUpButton{
-margin-top: 10% ;padding-left: 7% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 10% ;font-size: 0.3em ;
+  margin-top: 10% ;
+  padding: 0.5% 10% 0.5% 7%;
+  font-size: 0.3em ;
+}
+/*   //////////////////////////////////////  2nd Section     ///////////////////////////////////////////////         */
+.hide-lap{
+  display: none;
 }
 .description{
-padding: 7% 15% ;background-color: #b8b5ff;
+  padding: 7% 15% ;background-color: #b8b5ff;
 }
 img {
 max-width:100%;
 }
 .feature-box{
-display: flex;text-align: center;font-size: 0.75em;display: block;
+  display:block;text-align: center;font-size: 0.75em;max-width:100%
 }
 .feature-box-heading{
 font-size: 20px;
 }
-#privacyImage{
-border-radius: 5% ;margin-bottom: 5% ;
+.privacyImage{
+border-radius: 5% ;margin-bottom: 5% ;margin: 5px 5px ;
 }
-#service{
-background-color: white ;padding: 2% 12% ;margin-bottom:10% ;width:100%;
+@media screen and (max-width:1000px)
+{
+  .hide-mobile{
+    display: none;
+  }
+  .hide-lap{
+    display: block;
+  }
+  .description{
+    padding: 7% 7% ;background-color: #b8b5ff;
+  }
+  .feature-box{
+    display:flex;text-align: center;font-size: 0.75em;max-width:100%;margin: 1% 1%;
+  }
+  .feature-box-heading{
+  font-size: 5vw;padding-top: 10px;
+  }
+  .privacyImage{
+  border-radius: 5% ;min-width:40%;margin: 5% 5%;
+  }
 }
-#serviceHeading{
-text-align: center;font-size: 3.25em ;font-weight: bold;padding-top: 4%;margin-bottom: 7%;
-}
+/* /////////////////////////////////////////             3rd   //////////////////////////////       */
 .service-heading{
-padding-top: 4% ;padding-bottom: 20% ;text-align: center;font-size: 25px;font-weight: bold;
+  padding-top: 4% ;padding-bottom: 20% ;
+  text-align: center;font-size: 25px;font-weight: bold;
 }
-.serviceImage{
-box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.service{
+  height:auto;
+  background-color: white ;
+  padding: 2% 4% ;
+  margin-bottom:1% ;
 }
+
+.serviceHeading{
+  text-align: center;
+  font-size: 3.25em ;
+  font-weight: bold;
+  padding: 20px;
+  margin:2vh 5vw;
+
+  /* border: 2px solid red;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.service-box-div{
+  margin: 7% 7%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+}
+.service-box-heading{
+
+  padding-top: 4% ;
+  padding-bottom: 4% ;
+  text-align: left;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+
+/* ******************************************************************************************** */
+                                       /* Connect Css */
+
+
+.connect{
+
+  min-height: 40vh;
+  background-color: #edeef7;
+  margin-top: 5% ;
+
+}
+.connectMainDiv{
+
+  min-height: 30vh ;
+  margin: 5% 12% ;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.connect-box-div{
+  margin-right: 5% ;
+}
+.connect-box-right-div{
+
+  padding-top: 15% ;
+}
+.connect-icon{
+
+margin-top: 45% ;
+margin-left: 4% ;
+
+}
+
+
+
+
+
+/* ****************************************************************************************** */
+
+/* Self Test Css */
+
+
+#selfTestHead{
+  text-align: center ;
+  font-size: 3em;
+  padding-top: 5%;
+  padding-bottom: 5% ;
+}
+
+
+
+
+.begin-button{
+
+margin-left: 15%;
+margin-top: 25% ;
+
+
+}
+
 /* mobile CSS */
 
 
 
 
-@media screen and ( max-device-width:500px)
+@media screen and (max-device-width:500px)
 {
 .intro{
-    background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
+    background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;
+    padding-top: 10px;padding-bottom: 5px;display: table;
 }
 .IntroPic{
-  margin-right: 1% ;margin-top: 1% ;min-width:100%;height:auto;padding-left: 37%;padding-top: 150px;
+  margin-right: 1% ;margin-top: 1% ;min-width:100%;
+  height:auto;padding-left: 37%;padding-top: 150px;
 }
 .introText{
-  padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;
+  padding-left: 5% ;padding-top: 7% ; height:auto; width:100%;
 }
 .main {
   max-width: 100%;height: auto;
@@ -89,7 +217,24 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .introSignUpButton{
   font-size: 0.7em ;
 }
-
+.hide-mobile{
+  display: none;
+}
+.hide-lap{
+  display: block;
+}
+.description{
+  padding: 7% 7% ;background-color: #b8b5ff;
+}
+.feature-box{
+  display:flex;text-align: center;font-size: 0.75em;max-width:100%;margin: 1% 1%;
+}
+.feature-box-heading{
+font-size: 5vw;padding-top: 10px;
+}
+.privacyImage{
+border-radius: 5% ;min-width:40%;margin: 5% 5%;
+}
 }
 
 
@@ -99,10 +244,12 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 @media only screen and (max-width:700px)
 {
 .intro{
-    background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
+    background-color: #f7dbcd;height:auto;width: 100%;
+    margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
 }
 .IntroPic{
-  margin-right: 1% ;margin-top: 1% ;max-width:100%;height:auto;padding-left: 28%;padding-top: 0%;display: flexbox;
+  margin-right: 1% ;margin-top: 1% ;max-width:100%;
+  height:auto;padding-left: 28%;display: block;
 }
 .introText{
   padding-left: 5% ;padding-top: 7% ;height:auto;width:100%;
@@ -118,16 +265,13 @@ box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .introSubTitle{
   font-size: 7vw ;
 }
-
+.hide-mobile{
+  display: none;
+}
+.hide-lap{
+  display: block;
+}
 .tagLine{
   margin-top: 5%;font-size:3vw;
-}
-
-.introLoginButton{
-  margin-top: 10% ;padding-left: 10% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 7% ;font-size: 0.3em ;
-}
-
-.introSignUpButton{
-  margin-top: 10% ;padding-left: 7% ;padding-top: 0.5%;padding-bottom: 0.5% ;padding-right: 10% ;font-size: 0.3em ;
 }
 }
