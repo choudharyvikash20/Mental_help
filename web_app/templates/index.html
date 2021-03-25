@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'css/nav.css' %}" type="text/css">
-
   <script src="{% static 'js/home.js'%}"></script>
 </head>
 
@@ -34,7 +34,8 @@
   </nav>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
   <section class="intro">
 
@@ -51,7 +52,7 @@
 
 
   </section>
-<section class="description">
+ <section class="description">
     <div class="row">
 
       <div class="feature-box col-lg-4">
@@ -87,7 +88,30 @@
   <!-- *************************************************************************************** -->
   <!-- Overcome Your Problems Section -->
 
-  <section class="service">
+  <section id="service">
+
+  <!-- <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-interval="2000">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-color: red;">
+          <h1>Hello</h1>
+      </div>
+      <div class="carousel-item" style="background-color: blue;">
+
+      </div>
+      <div class="carousel-item"style="background-color: green;">
+
+      </div>
+    </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    </a>
+  </div> -->
+
 
     <h2 class="serviceHeading">Overcome your problems</h2>
 
@@ -167,7 +191,7 @@
 
   <!-- Connect Section -->
 
-  <section class="connect">
+  <section id="connect">
 
     <h2 class="serviceHeading">Connect With your Comfort</h2>
 
@@ -177,7 +201,7 @@
 
         <div class="connect-box-div">
           <div class="connect-box-left-div" style="width: 30%; float:left">
-            <img src="{% static 'img/chatIcon2.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+            <img src="{% static 'img/chatSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
 
           </div>
 
@@ -197,7 +221,7 @@
 
         <div class="connect-box-div">
           <div class="coonect-box-left-div" style="width: 30%; float:left">
-            <img src="{% static 'img/chatIcon2.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+            <img src="{% static 'img/callSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
 
           </div>
 
@@ -217,7 +241,7 @@
 
         <div class="connect-box-div">
           <div class="connect-box-left-div" style="width: 30%; float:left">
-            <img src="{% static 'img/chatIcon2.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+            <img src="{% static 'img/videoSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
 
           </div>
 
@@ -320,12 +344,11 @@
 
 
   </div >
-  <!-- !-- ******************************************************************************************************* --> -->
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
 
 
-  <script type="javascript" src="homepage.js">
-
-  </script>
+  <script type="javascript" src="homepage.js"></script>
 </body>
 
 </html>
