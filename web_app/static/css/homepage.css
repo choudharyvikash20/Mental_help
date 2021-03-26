@@ -1,5 +1,7 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 /* //////////////                                                  Intro section                          */
-.intro{
+#intro{
   background-color: #f7dbcd; min-height:40vh;
   width:100%;margin-top: 3% ;padding-top: 5px;
   padding-bottom: 5px;display: flex;
@@ -39,22 +41,22 @@
 .hide-lap{
   display: none;
 }
-.description{
+#description{
   padding: 7% 15% ;background-color: #b8b5ff;
 }
 img {
 max-width:100%;
 }
 .feature-box{
-  display:block;text-align: center;font-size: 0.75em;max-width:100%
+  display:block;text-align: center;font-size: 0.75em;max-width:100%;
 }
 .feature-box-heading{
 font-size: 20px;
 }
 .privacyImage{
-border-radius: 5% ;margin-bottom: 5% ;margin: 5px 5px ;
+border-radius: 5% ;margin-bottom: 5% ;margin: 5px 5px ;max-height: 100px;
 }
-@media screen and (max-width:1000px)
+@media screen and (max-width:1000px) and (min-width:501px)
 {
   .hide-mobile{
     display: none;
@@ -62,17 +64,23 @@ border-radius: 5% ;margin-bottom: 5% ;margin: 5px 5px ;
   .hide-lap{
     display: block;
   }
-  .description{
+  #description{
     padding: 7% 7% ;background-color: #b8b5ff;
   }
   .feature-box{
-    display:flex;text-align: center;font-size: 0.75em;max-width:100%;margin: 1% 1%;
+    display:flex;text-align: center;font-size: 0.75em;width:100%;margin: 1% 1%;
+  }
+  .pad-left{
+    padding-left: 30%;
+  }
+  .pad-right{
+    padding-right: 30%;
   }
   .feature-box-heading{
-  font-size: 5vw;padding-top: 10px;
+  font-size: 4vw;padding-top: 10px;
   }
   .privacyImage{
-  border-radius: 5% ;min-width:10px;margin: 5% 5%;max-width: 50px;
+  border-radius: 5% ;min-width:10px;margin: 5% 5%;min-height: 100px;max-height: 150px;
   }
 }
 /* /////////////////////////////////////////             3rd   //////////////////////////////       */
@@ -202,7 +210,7 @@ margin-top: 25% ;
 
 @media screen and (max-width:500px)
 {
-.intro{
+#intro{
     background-color: #f7dbcd;height:auto;width: 100%;margin-top: 3% ;
     padding-top: 10px;padding-bottom: 5px;display: table;
 }
@@ -242,7 +250,7 @@ margin-top: 25% ;
 .hide-lap{
   display: block;
 }
-.description{
+#description{
   padding: 7% 7% ;background-color: #b8b5ff;
 }
 .feature-box{
@@ -262,7 +270,7 @@ border-radius: 5% ;min-width:40%;margin: 5% 5%;
 
 @media screen and (max-width:700px) and (min-width:501px),
 {
-.intro{
+#intro{
     background-color: #f7dbcd;height:auto;width: 100%;
     margin-top: 3% ;padding-top: 10px;padding-bottom: 5px;display: table;
 }

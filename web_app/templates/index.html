@@ -6,7 +6,7 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'css/nav.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'css/login.css' %}" type="text/css">
@@ -106,33 +106,8 @@
     </div>
   </div>
 
-
-
-      <script>
-        const loginText = document.querySelector(".title-text .login");
-        const loginForm = document.querySelector("form.login");
-        const loginBtn = document.querySelector("label.login");
-        const signupBtn = document.querySelector("label.signup");
-        const signupLink = document.querySelector("form .signup-link a");
-        signupBtn.onclick = (() => {
-          loginForm.style.marginLeft = "-50%";
-          loginText.style.marginLeft = "-50%";
-        });
-        loginBtn.onclick = (() => {
-          loginForm.style.marginLeft = "0%";
-          loginText.style.marginLeft = "0%";
-        });
-        signupLink.onclick = (() => {
-          signupBtn.click();
-          return false;
-        });
-      </script>
-
-    </div>
-  </div>
-
 <!-- ///////////////////////////////////////////////// -->
-  <section class="intro">
+<section id="intro">
 
     <div class="introText">
       <h1 class="introMainTitle"><strong>Not Feeling happy<strong></h1>
@@ -145,12 +120,12 @@
       <img src="{% static 'img/homeTitilePic.jpg' %}" alt="" class="main" >
     </div>
 
-
   </section>
- <section class="description">
-    <div class="row">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7dbcd" fill-opacity="1" d="M0,96L26.7,106.7C53.3,117,107,139,160,133.3C213.3,128,267,96,320,80C373.3,64,427,64,480,64C533.3,64,587,64,640,101.3C693.3,139,747,213,800,213.3C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,138.7C1173.3,128,1227,64,1280,48C1333.3,32,1387,64,1413,80L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
 
-      <div class="feature-box col-lg-4">
+<section id="description">
+    <div class="row">
+      <div class="feature-box col-lg-4 pad-right">
         <img src="{% static 'img/privacy.svg' %}" alt="Privacy Matters" class="privacyImage">
         <h3 class="feature-box-heading">
           <b>Private and Confidential</b>
@@ -159,16 +134,16 @@
 
       </div>
 
-      <div class="feature-box col-lg-4">
-        <img src="{% static 'img/communitySupporticon.svg' %}" alt="Privacy Matters" class="privacyImage hide-mobile">
+      <div class="feature-box col-lg-4 pad-left">
+        <img src="{% static 'img/communitySupportIcon.svg' %}" alt="Privacy Matters" class="privacyImage hide-mobile">
         <h3 class="feature-box-heading">
           <b>Community Support</b>
         </h3>
-        <img src="{% static 'img/communitySupporticon.svg' %}" alt="Privacy Matters" class="privacyImage hide-lap">
+        <img src="{% static 'img/communitySupportIcon.svg' %}" alt="Privacy Matters" class="privacyImage hide-lap">
 
       </div>
 
-      <div class="feature-box col-lg-4">
+      <div class="feature-box col-lg-4 pad-right">
         <img src="{% static 'img/anonymous.svg' %}" alt="Privacy Matters" class="privacyImage">
         <h3 class="feature-box-heading">
           <b>Anonymous Discussions</b>
@@ -178,12 +153,12 @@
     </div>
 
 
-  </section>
+</section>
 
   <!-- *************************************************************************************** -->
   <!-- Overcome Your Problems Section -->
 
-  <section id="service">
+<section id="service">
 
   <!-- <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-interval="2000">
     <div class="carousel-inner">
@@ -280,13 +255,13 @@
     </div>
 
 
-  </section>
+</section>
 
   <!-- ******************************************************************************************** -->
 
   <!-- Connect Section -->
 
-  <section id="connect">
+<section id="connect">
 
     <h2 class="serviceHeading">Connect With your Comfort</h2>
 
@@ -355,7 +330,7 @@
 
     </div>
 
-  </section>
+</section>
 
 
   <!-- ********************************************************************************************** -->
@@ -363,7 +338,7 @@
   <!-- ************************************************************************************** -->
 
   <!-- Self Test Section  -->
-  <h1 id="selfTestHead">Discover Yourself</h1>
+ <h1 id="selfTestHead">Discover Yourself</h1>
 
 
   <div class="row ">
@@ -445,6 +420,26 @@
 
 
   <script type="javascript" src="homepage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
 </body>
 
 </html>
