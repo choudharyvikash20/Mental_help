@@ -1,0 +1,155 @@
+
+
+
+/*/////////////         1st section  \\\\\\\\\\\\\\\\\\\\\\\*/
+.bookSession{
+  /*background-color: #dddddd;*/
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+
+  min-height:40vh;
+  width:100%;margin-top: 3% ;padding-top: 5px;
+  padding-bottom: 5px;display: flex;
+}
+.bookSessionText{
+ font-size: 4em ;padding-left: 5% ;
+  padding-top: 7% ;height:auto;width:100%;
+  align-self: flex-start;
+}
+.bookSessionButton{
+  margin-top: 7% ;
+}
+.dashHead1{
+    text-align: left;font-size: 4vw;
+}
+.dashHead2{
+    text-align: left;font-size: 4vw;
+}
+
+.bookSessionImage{
+  margin-right: 1% ;margin-top: 3% ;margin-bottom:2%;
+  align-self: flex-end;max-width:100%;
+  height:auto;padding-top: 18vh;
+  padding-bottom:80px;
+  padding-right:30px;
+
+}
+.img-fl{
+  max-width: 100%;height: auto;
+  border-radius: 42% 58% 58% 42% / 49% 28% 72% 51% ;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom:20px;
+}
+
+
+/*///////////////////////////////////    2nd section       \\\\\\\\\\\*/
+.serviceHeading{
+  text-align: center;
+  font-size: 3.25em ;
+  font-weight: bold;
+  padding: 20px;
+  margin:2vh 5vw;
+
+  /* border: 2px solid red;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#connect{
+
+  min-height: 40vh;
+  background-color: #edeef7;
+  margin-top: 5% ;
+
+}
+.connectMainDiv{
+
+  min-height: 30vh ;
+  margin: 5% 12% ;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.connectSubDiv:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: connect;
+  animation-duration: 0.10s;
+  border-left: 8px solid #b8b5ff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@keyframes connect {
+    0%   {border-left: 2px solid #ffffff;}
+    25%  {border-left: 3px solid #b8b5df;}
+    50%  {border-left: 4px solid #b8b5ea;}
+    100% {border-left: 5px solid #b8b5ff;}
+}
+.connect-box-div{
+  margin-right: 5% ;
+}
+.connect-box-right-div{
+
+  padding-top: 25px ;
+}
+.connect-icon{
+
+margin-top: 15% ;
+margin-left: 4% ;
+
+}
+#description{
+  padding: 7% 15% ;background-color: #b8b5ff;
+}
+img {
+max-width:100%;
+}
+.feature-box{
+  display:block;text-align: center;font-size: 0.75em;max-width:100%;
+
+}
+.feature-box-heading{
+font-size: 20px;
+}
+.privacyImage{
+border-radius: 5% ;margin-bottom: 5% ;margin: 5px 5px ;max-height: 100px;
+}
+.pad-right{
+  padding-right:20%;
+}
+.pad-left{
+  padding-left:20%;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////        Mobile   view             \\\\\\\\\\\\\\\\*/
+@media screen and (max-width:500px){
+    .bookSession{
+        height:auto;width: 100%;margin-top: 3% ;
+        padding-top: 10px;padding-bottom: 5px;display: table;
+    }
+    .bookSessionImage{
+        margin-right: 1% ;margin-top: 1% ;max-width:80%;
+        height:auto;padding-left: 25%;padding-top: 1vh;
+    }
+    .bookSessionText{
+        padding-left: 5% ;height:auto; width:100%;
+    }
+    .img-fl{
+        max-width: 100%;height: auto;
+    }
+    .dashHead1{
+        font-size: 10vw;
+    }
+    .dashHead2{
+        font-size: 8vw;padding-top: 5vh;
+    }
+}

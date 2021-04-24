@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/dashnav.css' %}" type="text/css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+      <div class="dash_nav">
+        <h2 class="site_name" style="color:white;">MentalHelp</h2>
+      </div>
+      <div class="s-layout">
+             <div>
+
+                  <div class="s-sidebar__trigger anchor-dash">
+                     <i class="fa fa-bars"></i>
+                  </div>
+
+              <nav class="s-sidebar__nav">
+                 <ul>
+                    <li>
+                      <div class="nav-dash-items">
+                        <a class="s-sidebar__nav-link anchor-dash nav-active" href="{% url 'dashboard' %}">
+                           <i class="far fa-home link-icon" ></i><em>Home</em>
+                        </a>
+                      </div>
+
+                    </li>
+                    <li>
+                       <a class="s-sidebar__nav-link anchor-dash" href="#0">
+                         <i class="far fa-user"></i><em>My Profile</em>
+                       </a>
+                    </li>
+                    <li>
+                       <a class="s-sidebar__nav-link anchor-dash" href="{% url 'mysession' %}">
+                          <i class="far fa-camera"></i><em>My sessions</em>
+                       </a>
+                    </li>
+                     <li>
+                       <a class="s-sidebar__nav-link anchor-dash" href="#0">
+                          <i class="far fa-comment-alt"></i><em>Give Feedback</em>
+                       </a>
+                    </li>
+                     <li>
+                       <a class="s-sidebar__nav-link anchor-dash" href="#0">
+                          <i class="far fa-file" ></i><em>Self Test</em>
+                       </a>
+                    </li>
+                 </ul>
+              </nav>
+            </div>
+            <main class="s-layout__content">
+              <div id="main-column" class="column">
+
+
+                <!--__________________________________________________________-->
+                {% block content %}
+
+                {% endblock %}
+                <!--__________________________________________________________-->
+
+
+              </div>
+            </main>
+      </div>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="{% static 'js/dashnav.js'%}"></script>
+</body>
+</html>

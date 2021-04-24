@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8y-6hrnw-)vw&q+7*kx_j*%yml-t_su*oal6^*hn47r(kcrkj&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','mental-help.herokuapp.com']
 

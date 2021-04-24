@@ -1,0 +1,93 @@
+{% extends 'dashnav.html' %}
+{% load static %}
+
+{% block content%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}" type="text/css">
+
+<section class="make-section">
+
+                       <section class="bookSession">
+                           <div class="bookSessionText">
+                               <h1 class="dashHead1"><b>Whatever Troubling You</b></h1>
+                               <h1 class="dashHead2"> Get Help Now</h1>
+                               <button type="button" name="button" class="btn btn-primary bookSessionButton">Book Session Now</button>
+                           </div>
+                           <div class="bookSessionImage" >
+                               <img src="{% static 'img/dash1.jpg' %}" class="img-fl" alt="Smiling Face">
+                           </div>
+                       </section>
+
+                   </section>
+                   <section class="make-section">
+                       <section id="connect">
+                           <h2 class="serviceHeading">Connect With your Comfort</h2>
+                           <div class="row connectMainDiv">
+                               <div class="connectSubDiv col-lg-4 ">
+                                   <div class="connect-box-div">
+                                       <div class="connect-box-left-div" style="width: 30%; float:left">
+                                           <img src="{% static 'img/chatSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+                                       </div>
+                                       <div class="connect-box-right-div" style="width:65%; float:right">
+                                           <h3 class="connect-box-heading">
+                                               <b>Chat sessions</b>
+                                           </h3>
+                                           <p >Depression is a state of unhppiness for a long period of time.</p>
+                                       </div>
+                                       <br style="clear:both;" />
+                                   </div>
+                               </div>
+                               <div class="connectSubDiv col-lg-4 ">
+                                   <div class="connect-box-div">
+                                       <div class="coonect-box-left-div" style="width: 30%; float:left">
+                                           <img src="{% static 'img/callSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+                                       </div>
+                                       <div class="connect-box-right-div" style="width:65%; float:right">
+                                           <h3 class="connect-box-heading">
+                                               <b>Voice Calls</b>
+                                           </h3>
+                                           <p class="connect-box-content">Depression is a state of unhppiness for a long period of time.</p>
+                                       </div>
+                                       <br style="clear:both;" />
+                                   </div>
+                               </div>
+                               <div class="connectSubDiv col-lg-4 ">
+                                   <div class="connect-box-div">
+                                       <div class="connect-box-left-div" style="width: 30%; float:left">
+                                           <img src="{% static 'img/videoSessions.png' %}" class="img-fluid connect-icon" alt="Responsive image">
+                                       </div>
+                                       <div class="connect-box-right-div" style="width:65%; float:right">
+                                           <h3 class="connect-box-heading">
+                                               <bold>1 to 1 video sessions</bold>
+                                           </h3>
+                                           <p class="connect-box-content">Depression is a state of unhppiness for a long period of time.</p>
+                                       </div>
+                                       <br style="clear:both;" />
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="feature-box col-lg-4 col-md-4 pad-left">
+                                   <img src="{% static 'img/privacy.svg' %}" alt="Privacy Matters" class="privacyImage">
+                                   <h3 class="feature-box-heading">
+                                       <b>Private and Confidential</b>
+                                   </h3>
+                               </div>
+                               <div class="feature-box col-lg-4 col-md-4 ">
+                                   <img src="{% static 'img/communitySupportIcon.svg' %}" alt="Privacy Matters" class="privacyImage">
+                                   <h3 class="feature-box-heading">
+                                       <b>Community Support</b>
+                                   </h3>
+                               </div>
+                               <div class="feature-box col-lg-4 col-md-4 pad-right">
+                                   <img src="{% static 'img/anonymous.svg' %}" alt="Privacy Matters" class="privacyImage">
+                                   <h3 class="feature-box-heading">
+                                       <b>Anonymous Discussions</b>
+                                   </h3>
+                               </div>
+                           </div>
+                       </section>
+                   </section>
+
+
+{% endblock %}
